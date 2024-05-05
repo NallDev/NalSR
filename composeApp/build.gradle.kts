@@ -15,6 +15,8 @@ kotlin {
             }
         }
     }
+
+    task("testClasses")
     
     listOf(
         iosX64(),
