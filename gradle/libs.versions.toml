@@ -9,10 +9,11 @@ compose-plugin = "1.6.2"
 kotlin = "1.9.23"
 kotlinxSerializationJson = "1.6.3"
 media3Exoplayer = "1.3.1"
-ktor = "2.3.10"
+ktor = "2.3.8"
 coroutines = "1.8.0"
 koin = "3.5.3"
 mvvmCore = "0.16.1"
+voyager = "1.0.0"
 
 [libraries]
 androidx-media3-common = { module = "androidx.media3:media3-common", version.ref = "media3Exoplayer" }
@@ -23,6 +24,7 @@ compose-ui-tooling = { module = "androidx.compose.ui:ui-tooling", version.ref = 
 compose-ui-tooling-preview = { module = "androidx.compose.ui:ui-tooling-preview", version.ref = "compose" }
 kotlinx-serialization-json = { module = "org.jetbrains.kotlinx:kotlinx-serialization-json", version.ref = "kotlinxSerializationJson" }
 ktor-client-core = { module = "io.ktor:ktor-client-core", version.ref = "ktor" }
+ktor-client-logging = {module = "io.ktor:ktor-client-logging", version.ref = "ktor"}
 ktor-client-content-negotiation = { module = "io.ktor:ktor-client-content-negotiation", version.ref = "ktor" }
 ktor-serialization-kotlinx-json = { module = "io.ktor:ktor-serialization-kotlinx-json", version.ref = "ktor" }
 ktor-client-okhttp = { module = "io.ktor:ktor-client-okhttp", version.ref = "ktor" }
@@ -32,6 +34,9 @@ kotlinx-coroutines-android = { module = "org.jetbrains.kotlinx:kotlinx-coroutine
 koin-core = { module = "io.insert-koin:koin-core", version.ref = "koin" }
 mvvm-compose = { module = "dev.icerock.moko:mvvm-compose", version.ref = "mvvmCore" }
 mvvm-core = { module = "dev.icerock.moko:mvvm-core", version.ref = "mvvmCore" }
+voyager-navigator = { module = "cafe.adriel.voyager:voyager-navigator", version.ref = "voyager" }
+voyager-tab = { module = "cafe.adriel.voyager:voyager-tab-navigator", version.ref = "voyager" }
+voyager-transitions = { module = "cafe.adriel.voyager:voyager-transitions", version.ref = "voyager" }
 
 [plugins]
 androidApplication = { id = "com.android.application", version.ref = "agp" }

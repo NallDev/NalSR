@@ -9,3 +9,5 @@ expect fun getPlatform(): Platform
 
 @Composable
 expect fun VideoPlayer(modifier: Modifier, url: String)
+
+expect fun logError(tag: String, message: String)

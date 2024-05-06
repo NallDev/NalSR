@@ -46,6 +46,7 @@ kotlin {
             implementation(compose.ui)
 
             implementation(libs.ktor.client.core)
+            implementation(libs.ktor.client.logging)
             implementation(libs.ktor.serialization.kotlinx.json)
             implementation(libs.ktor.client.content.negotiation)
             implementation(libs.kotlinx.coroutines.core)
@@ -53,6 +54,12 @@ kotlin {
             implementation(libs.kotlinx.serialization.json)
             api(libs.mvvm.core)
             api(libs.mvvm.compose)
+
+            implementation(libs.voyager.navigator)
+            implementation(libs.voyager.tab)
+            implementation(libs.voyager.transitions)
+            implementation("dev.chrisbanes.haze:haze:0.7.1")
+            implementation("dev.chrisbanes.haze:haze-materials:0.7.1")
 
             implementation(compose.components.resources)
             implementation(compose.components.uiToolingPreview)

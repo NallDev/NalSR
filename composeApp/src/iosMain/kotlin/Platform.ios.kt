@@ -52,3 +52,7 @@ actual fun VideoPlayer(modifier: Modifier, url: String) {
         },
         modifier = modifier)
 }
+
+actual fun logError(tag: String, message: String) {
+    println("ERROR: [$tag] $message")
+}

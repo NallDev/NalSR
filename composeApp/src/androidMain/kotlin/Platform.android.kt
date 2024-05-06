@@ -1,4 +1,5 @@
 import android.os.Build
+import android.util.Log
 import android.widget.VideoView
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Modifier
@@ -21,4 +22,8 @@ actual fun VideoPlayer(modifier: Modifier, url: String){
             }
         },
         update = {})
+}
+
+actual fun logError(tag: String, message: String) {
+    Log.e(tag, message)
 }
